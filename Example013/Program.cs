@@ -90,5 +90,29 @@ void Task16()
     Console.WriteLine($"двухзначное число {f_digit}{t_digit}");
 }
 
+
+void Task17_Dop()
+{
+        int input (string text)
+    {
+        Console.WriteLine(text);
+        return Convert.ToInt32(Console.ReadLine());
+    } 
+
+    int f_side = input ("Введите длину первой стороны ");
+    int s_side = input ("Введите длину второй стороны ");
+    int t_side = input ("Введите длину третьей стороны ");
+
+    if (f_side == s_side  || f_side == t_side || s_side == t_side)
+    {
+        Console.WriteLine($"Треугольник является равнобедренным ");
+    }
+    else
+        Console.WriteLine($"Треугольник НЕ является равнобедренным ");
+    
+}
+// Написать программу, которая определяет, является ли 
+// треугольник со сторонами a, b, c равнобедренным.
+
 Console.Clear();
-Task15();
+Task17_Dop();
